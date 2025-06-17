@@ -1,73 +1,102 @@
-# Welcome to your Lovable project
 
-## Project info
+# TechNova - Modern IT Company Website
 
-**URL**: https://lovable.dev/projects/ce3324f4-f2cf-4737-ba74-4b05a2acd3ef
+A stunning, modern website for TechNova, featuring a sleek dark theme with neon accents, smooth animations, and responsive design.
 
-## How can I edit this code?
+## 🚀 Features
 
-There are several ways of editing your application.
+- **Modern Design**: Dark theme with neon blue/purple accents and glassmorphism effects
+- **Responsive Layout**: Fully responsive design that works on all devices
+- **Smooth Animations**: Floating backgrounds, glow effects, and smooth transitions
+- **Interactive Sections**: 
+  - Hero section with animated title and CTA
+  - Projects showcase with hover effects
+  - Team member cards with social links
+  - Contact form with validation
+- **Performance Optimized**: Built with Vite and React for fast loading
 
-**Use Lovable**
+## 🛠️ Tech Stack
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/ce3324f4-f2cf-4737-ba74-4b05a2acd3ef) and start prompting.
+- **Frontend**: React 18 + TypeScript
+- **Styling**: Tailwind CSS with custom neon theme
+- **UI Components**: Shadcn/ui components
+- **Build Tool**: Vite
+- **Animations**: Custom CSS animations and Tailwind transitions
 
-Changes made via Lovable will be committed automatically to this repo.
+## 📦 Installation & Setup
 
-**Use your preferred IDE**
+1. **Clone or download the project**
+2. **Install dependencies**:
+   ```bash
+   npm install
+   ```
+3. **Start development server**:
+   ```bash
+   npm run dev
+   ```
+4. **Build for production**:
+   ```bash
+   npm run build
+   ```
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## 🎨 Customization
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+### Colors
+The neon theme colors can be customized in `tailwind.config.ts`:
+```typescript
+neon: {
+  blue: '#00f5ff',
+  purple: '#8b5cf6',
+  pink: '#ec4899',
+  green: '#00ff88',
+}
 ```
 
-**Edit a file directly in GitHub**
+### Content
+- **Projects**: Update the `projects` array in `src/pages/Index.tsx`
+- **Team Members**: Update the `teamMembers` array in `src/pages/Index.tsx`
+- **Company Info**: Update text content throughout the Index component
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## 🚀 Deployment
 
-**Use GitHub Codespaces**
+### Vercel (Recommended)
+1. Push your code to GitHub
+2. Connect your GitHub repo to Vercel
+3. Deploy automatically
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+### Netlify
+1. Build the project: `npm run build`
+2. Upload the `dist` folder to Netlify
+3. Configure redirects for SPA routing
 
-## What technologies are used for this project?
+## 🔮 Future Enhancements
 
-This project is built with:
+To create a full-stack application with admin panel and database, consider adding:
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+1. **Backend Integration**: Connect to Supabase for:
+   - User authentication
+   - Database for projects and team members
+   - Admin panel for content management
+   - Contact form submissions
 
-## How can I deploy this project?
+2. **Additional Features**:
+   - Blog/News section
+   - Case studies with detailed project pages
+   - Client testimonials
+   - Service offerings pages
+   - Admin dashboard for content management
 
-Simply open [Lovable](https://lovable.dev/projects/ce3324f4-f2cf-4737-ba74-4b05a2acd3ef) and click on Share -> Publish.
+## 📱 Browser Support
 
-## Can I connect a custom domain to my Lovable project?
+- Chrome (latest)
+- Firefox (latest)
+- Safari (latest)
+- Edge (latest)
 
-Yes, you can!
+## 🤝 Contributing
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+Feel free to submit issues and enhancement requests!
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+---
+
+Built with ❤️ using Lovable.dev
